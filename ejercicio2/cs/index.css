@@ -1,0 +1,21 @@
+/*Fuente general*/
+body {
+    font-family: arial, sans-serif;
+}
+
+/*Cambiar color de navbar*/
+.bg-danger{
+    background-color: blueviolet !important;
+}
+
+/*Ajustes para que el carrusel no tenga espacio alrededor */
+.carrusel-item img{
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/*Opcional: Cambiar color al pasar el mouse en el botón*/
+
+.btn-danger:hover {
+    background-color: #a90000;
+}

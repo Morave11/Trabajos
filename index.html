@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="./ejercicio2/cs/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<link rel="stylesheet" href="./ejercicio2/cs/index.css">
+<title>Demo Avianca</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!--Header con navbar-->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./ejercicio2/img/logo.png" alt="logo" width="40" class="me-2">
+        Avianca
+        </a>
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+    <li class="nav-item"><a class="nav-link text-wite" href="#">Reserva</a></li>
+    <li class="nav-item"><a class="nav-link text-wite" href="#">Check-in</a></li>
+    <li class="nav-item"><a class="nav-link text-wite" href="#">Estado del vuelo</a></li>
+    <li class="nav-item"><a class="nav-link text-wite" href="#">Gestiona tu reserva</a></li>
+    </ul>
+</div>
+</div>
+    </nav>
+</header>
+
+<!-- Formulario centrado -->
+<section class="py-5">
+<div class="container">
+    <h2 class="text-center mb-4">Buscar Vuelos</h2>
+    <form>
+    <div class="row justify-content-center g-3 align-items-end">
+        <div class="col-12 col-md-2">
+        <label for="Origen" class="form-label">Origen</label>
+        <input type="text" class="form-control" id="Origen" name="Origen" placeholder="Ej: Bogotá" required>
+        </div>
+
+        <div class="col-12 col-md-2">
+        <label for="Destino" class="form-label">Destino</label>
+        <input type="text" class="form-control" id="Destino" name="Destino" placeholder="Ej: Medellín" required>
+        </div>
+
+        <div class="col-12 col-md-2">
+        <label for="fecha" class="form-label">Fecha</label>
+        <input type="date" class="form-control" id="fecha" name="fecha" required>
+        </div>
+
+        <div class="col-12 col-md-2">
+        <label for="Pasajeros" class="form-label">Pasajeros</label>
+        <input type="number" class="form-control" name="Pasajeros" min="1" value="1" required>
+        </div>
+
+        <div class="col-12 col-md-2 d-grid">
+        <button type="submit" class="btn btn-danger">Buscar vuelos</button>
+        </div>
+    </div>
+    </form>
+</div>
+</section>
+
+<!-- Carrusel -->
+<div id="carouselAvianca" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="./ejercicio2/img/img1.jpg" class="d-block w-100" alt="slide 1">
+    </div>
+    <div class="carousel-item">
+        <img src="./ejercicio2/img/img2.jpg" class="d-block w-100" alt="slide 2">
+    </div>
+    <div class="carousel-item">
+        <img src="./ejercicio2/img/img3.jpg" class="d-block w-100" alt="slide 3">
+    </div>
+    </div>
+</div>
+
+
+<section class="py-5 bg-light text-center">
+    <div class="container">
+    <h1 class="display-4">¡Vuela con nosotros!</h1>
+    <p class="lead">Encuentra los mejores destinos y tarifas</p>
+    <a href="#" class="btn btn-danger btn-lg mt-3">Reservar ahora</a>
+    </div>
+</section>
+
+<!-- Cards de destinos -->
+<section class="container my-5">
+    <div class="row justify-content-center g-4">
+    <div class="col-md-4">
+        <div class="card h-100">
+        <img src="./ejercicio2/img/img1.jpg" class="card-img-top" alt="Bogota">
+        <div class="card-body">
+            <h5 class="card-title">Bogota</h5>
+            <p class="card-text">LA capital de Colombia te espera con cultura y sabores unicos.</p>
+            <center><a href="#" class="btn btn-danger">Ver vuelos</a></center>
+        </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card h-100">
+        <img src="./ejercicio2/img/img2.jpg" class="card-img-top" alt="Medellin">
+        <div class="card-body">
+            <h5 class="card-title">Medellin</h5>
+            <p class="card-text">Conoce la ciudad de la eterna primavera y sus increibles paisajes </p>
+            <center><a href="#" class="btn btn-danger">Ver vuelos</a></center>
+        </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card h-100">
+        <img src="./ejercicio2/img/img3.jpg" class="card-img-top" alt="Cartagena">
+        <center class="card-body">
+            <h5 class="card-title">Cartagena</h5>
+            <p class="card-text">Disfruta del caribe colombiano, su historia y sus playas magicas.</p>
+            <center><a href="#" class="btn btn-danger">Ver vuelos</a></center>
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-4 mt-auto">
+    <div class="container">
+    <div class="mb-3">
+        <a href="#"  class="text-white me-3">Terminos y condiciones</a>
+        <a href="#"  class="text-white me-3">Politica y privacidad</a>
+        <a href="#"  class="text-white me-3">Ayuda</a>
+    </div>
+    <p class="mb-0">&copy; 2025 Avianca Demo-Todos los derechos reservados</p>
+    </div>
+</footer>
+</body>
+</html>
