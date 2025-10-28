@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Avianca Demo</title>
+<link rel="stylesheet" href="estilo.css" />
+<link type="imagen" href="../ejercicio2/img/logo.png"/>
+</head>
+<body>
+
+<!-- Header con imagen y logo -->
+<header class="nav-header">
+    <div class="logo-container">
+    <img src="..//ejercicio2/img/logo.png" alt="Logo Avianca" class="logo-img" />
+    <span class="logo-text">Avianca</span>
+    </div>
+    <nav class="nav-links">
+    <a href="#">Reserva</a>
+    <a href="#">Check-in</a>
+    <a href="#">Estado del vuelo</a>
+    <a href="#">Gestiona tu reserva</a>
+    </nav>
+</header>
+
+<!-- Carrusel -->
+<section class="carrusel">
+    <div class = "slide active" style="background-image: url(../ejercicio2/img/img1.jpg);"> </div>
+    <div class = "slide" style="background-image: url(../ejercicio2/img/img2.jpg);"> </div>
+    <div class = "slide" style="background-image: url(../ejercicio2/img/img3.jpg);"> </div>
+</section>
+
+<!-- Cuerpo principal -->
+<section class="hero">
+    <h1>¡Vuela con nosotros!</h1>
+    <p>Encuentra los mejores destinos y tarifas</p>
+    <button>Reservar ahora</button>
+</section>
+<!-- Footer -->
+
+<footer class="footer">
+    <div class="footer-links">
+        <a href="#">Términos y condiciones </a>
+        <a href="#">Política de privacidad </a>
+        <a href="#">Ayuda</a>
+    </div>
+        <p>&copy; 2025 Avianca Demo - Todos los derechos reservados</p>
+</footer>
+<!-- Script para carrusel simple  -->
+<script>
+let slides = document.querySelectorAll('.slide');
+let index = 0;
+
+    setInterval(() => {
+        slides[index].classList.remove('active');
+        index = (index + 1) % slides.length;
+        slides[index].classList.add('active');
+    }, 4000);
+</script>
+</body>
+</html>
